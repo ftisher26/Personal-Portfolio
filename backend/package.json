@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "node",
+  "keywords": [
+    "express",
+    "node",
+    "api",
+    "mongodb",
+    "mongoose",
+    "cors",
+    "morgan"
+  ],
+  "license": "ISC",
+  "author": "TatoCSV",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.6.3",
+    "morgan": "^1.11.0",
+    "zod": "^4.4.3"
+  }
+}
