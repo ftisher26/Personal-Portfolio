@@ -1,8 +1,9 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 
 export default function useDocumentTitle() {
   const location = useLocation();
+  const navigate = useNavigate();
 
   const titleMap = {
     '/home': 'Home | Coding Addict',
@@ -12,7 +13,13 @@ export default function useDocumentTitle() {
   };
 
   useEffect(() => {
+
+    if (location.pathname === '/') {
+      navigate("/home", {replace: true});
+      return;
+    }
+
     const currentTitle = titleMap[location.pathname] || 'Coding Addict';
     document.title = currentTitle;
-  }, [location]);
+  }, [location, navigate]);
 };
