@@ -52,7 +52,7 @@ return () => {
       
       {/* Logo */}
       <a href="/home" className="font-semibold text-[1.4rem] text-[#1a1a2e] no-underline">
-        Coding <span className="text-blue-500">Addict</span>
+        Tato <span className="text-blue-500">CSV</span>
       </a>
 
       {/* Nav links Medium and Wider Screens*/}

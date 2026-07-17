@@ -9,7 +9,7 @@ export default function Hero() {
 
       <div className="contents justify-center items-center w-full h-[70vh] bg-transparent relative shrink-0 z-0">
         <video className="absolute top-0 left-0 size-full object-cover aspect-video z-0"
-        autoPlay muted loop playsInline preload="metadata" poster="/Miniatura.png"
+        autoPlay muted loop playsInline loading="eager" preload="metadata" poster="/Miniatura.png"
         >
           <source src="/Raini.mp4" alt="Lluvia y gato" type="video/mp4"/>
           Tu navegador no soporta el elemento de video.

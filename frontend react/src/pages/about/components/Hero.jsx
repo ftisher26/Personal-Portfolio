@@ -22,7 +22,7 @@ export default function Hero() {
           </p>
         </div>
         <div className="relative shrink-0 w-70 max-w-100 h-full">
-          <img src={pokemon} alt="A Pokemon image" className="block w-full h-auto object-cover" />
+          <img src={pokemon} alt="A Pokemon image" fetchPriority="high" loading="eager" className="block w-full h-auto object-cover" />
         </div>
       </section>
     </>

@@ -8,7 +8,7 @@ export default function Hero() {
       <section className="bg-white min-h-85 flex flex-col justify-between px-[5%] py-16 gap-8 md:flex-row md:justify-around">
         <div className="max-w-140 size-fit">
             <h1 className="text-black text-5xl font-courier size-fit">
-              <span className="relative no-underline after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-1/2 after:bg-blue-500 ">
+              <span className="relative no-underline after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-1/2 after:bg-blue-500">
                 HI THERE!
               </span>   
             </h1>
@@ -40,7 +40,7 @@ export default function Hero() {
             </div>
         </div>
         <div className="relative shrink-0 w-70 max-w-100 h-full">
-          <img src={coche} alt="" fetchPriority='high' className="block w-full object-cover" />
+          <img loading='eager' src={coche} alt="" fetchPriority='high' className="block w-full object-cover" />
         </div>
       </section>
     </>
