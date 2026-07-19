@@ -40,7 +40,13 @@ export default function Hero() {
             </div>
         </div>
         <div className="relative shrink-0 w-70 max-w-100 h-full">
-          <img loading='eager' src={coche} alt="" fetchPriority='high' className="block w-full object-cover" />
+          <img 
+          loading='eager' 
+          src={coche} 
+          alt="A fucking car bro" 
+          fetchPriority='high' 
+          decoding='async'
+          className="block w-full object-cover " />
         </div>
       </section>
     </>

@@ -9,7 +9,7 @@ export default function Footer() {
   <div className="pt-2 pl-8 pr-8">
     <footer className="min-[320px]:max-[604px]:flex min-[320px]:max-[604px]:flex-col min-[320px]:max-[604px]:items-center bg-white lg:flex lg:justify-between">
       <a href="/home" className="font-semibold text-[2rem] text-[#1a1a3a] no-underline max-lg:mb-6">
-        Coding <span className="text-blue-500">Addict</span>
+        Tato <span className="text-blue-500">CSV</span>
       </a>
       <nav className="flex m-0  p-0 text-[3.5rem]">
         <ul className="flex flex-col items-center justify-center text-[1.1rem] gap-2 m-0 p-0 min-[604px]:max-lg:items-baseline min-[604px]:max-lg:justify-baseline lg:flex-row ">

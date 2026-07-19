@@ -20,7 +20,7 @@ export default function SkillsCards() {
   return (
     <>
       <main className='py-8 px-4 bg-[#edf2f7]'>
-        <section className="flex flex-col justify-baseline items-center gap-8 lg:flex-row md:ml-20">
+        <section className="flex flex-col gap-8 mt-5 lg:flex-row xl:ml-20">
           <div className="min-h-65">
 
               {/* TITLE */}

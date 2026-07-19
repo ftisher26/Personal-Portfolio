@@ -6,7 +6,7 @@ export default function Hero() {
       <section className="bg-white min-h-85 flex flex-col justify-between px-[5%] py-16 gap-8 md:flex-row">
         <div className="max-w-140 size-fit">
           <h1 className="font-bold text-5xl text-black mb-3 font-courier md:text-6xl">About Me</h1>
-          <p className="whitespace-pre-line text-black">
+          <p className="text-wrap whitespace-pre-line text-black">
             Lorem ipsum dolor sit amet consectetur adipiscing elit. 
             Ex sapien vitae pellentesque sem placerat in id. 
             Pretium tellus duis convallis tempus leo eu aenean. 
@@ -22,7 +22,13 @@ export default function Hero() {
           </p>
         </div>
         <div className="relative shrink-0 w-70 max-w-100 h-full">
-          <img src={pokemon} alt="A Pokemon image" fetchPriority="high" loading="eager" className="block w-full h-auto object-cover" />
+          <img 
+          loading="eager" 
+          src={pokemon} 
+          alt="A Pokemon image" 
+          fetchPriority="high" 
+          decoding="async"
+          className="block w-full h-auto object-cover" />
         </div>
       </section>
     </>

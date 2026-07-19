@@ -42,7 +42,12 @@ export default function MainSection() {
                   className={`flex-1 bg-white border-2 border-gray-300 rounded-md`}
                 >
                   <div className="max-w-full overflow-hidden relative isolate md:h-50">
-                    <img loading='lazy' src={image} alt={title} fetchPriority='high' className="object-cover object-center size-full max-w-full" />
+                    <img 
+                    loading='lazy' 
+                    src={image} alt={title} 
+                    fetchPriority='high' 
+                    decoding='async'
+                    className="object-cover object-center size-full max-w-full" />
                   </div>
                   <div className="p-4">
                     <h2 className="text-xl font-black mb-2 underline md:text-2xl">{title}</h2>
