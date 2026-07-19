@@ -5,6 +5,7 @@ export default function ExpCards({ title, subtitles, description }) {
         <div className="flex flex-wrap size-fit gap-x-2 gap-y-3 mt-2 ml-8">
           {subtitles.map((subtitles, index) => (
               <span 
+                key={index}
                 className="text-lg font-medium lowercase bg-transparent text-blue-600 tracking-wider" 
               > 
                 {subtitles}

@@ -1,21 +1,17 @@
-import Cards from './Cards'
 import ExpSection from './ExpSection';
 
 export default function SkillsCards() {
 
   const cardsData = [
     {
-      id: 1,
       category: 'Frontend',
       skills: ["HTML5", "CSS", "JavaScript", "React"]
     },
     {
-      id: 2,
       category: 'Backend',
       skills: ["Node.js", "Express", "MongoDB"]
     },
     {
-      id: 3,
       category: 'Additional',
       skills: ["Git", "SQL"]
     }
@@ -24,9 +20,8 @@ export default function SkillsCards() {
   return (
     <>
       <main className='py-8 px-4 bg-[#edf2f7]'>
-        <section className="flex flex-col justify-baseline items-center gap-8 md:flex-row md:ml-20">
+        <section className="flex flex-col justify-baseline items-center gap-8 lg:flex-row md:ml-20">
           <div className="min-h-65">
-            <div className="flex flex-col">
 
               {/* TITLE */}
               <div className="flex size-fit mb-8">
@@ -36,16 +31,25 @@ export default function SkillsCards() {
               </div>
 
               {/* CARDS */}
-              <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-14 max-w-275 mx-auto">
-                {cardsData.map((item) => (
-                  <Cards
-                    key={item.id}
-                    title={item.category} 
-                    skills={item.skills}    
-                  />
+              <div className="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-8 max-w-275 mx-auto">
+                {cardsData.map((item, index) => (
+                  <div 
+                    key={index}
+                    className={`bg-[#202020] w-2xs h-37 border-2 rounded-2xl border-blue-700`}
+                  >        
+                    <h3 className="text-lg text-white font-bold size-fit mt-2 ml-5">{item.category}</h3>
+                    <div className="flex flex-wrap gap-x-2 gap-y-3 mt-5 ml-5">  
+                    {item.skills.map((skill, skillIndex) => (
+                      <span 
+                        key={skillIndex}
+                        className="px-4 py-1 text-xs font-semibold lowercase bg-transparent text-white border-2 border-blue-500 rounded-full tracking-wider">
+                        {skill}
+                      </span>
+                    ))}
+                    </div>
+                  </div>  
                 ))} 
               </div>
-            </div>
           </div>
         </section>
         
