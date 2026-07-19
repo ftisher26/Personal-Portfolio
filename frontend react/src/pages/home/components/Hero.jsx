@@ -13,7 +13,7 @@ export default function Hero() {
               </span>   
             </h1>
             <h2 className="text-black text-4xl font-courier size-fit mt-5">I'm Thiago Padularrosa</h2>
-            <h3 className="flex justify-center w-55 text-white text-3xl font-courier bg-gray-600 mt-5 md:w-100">Full Stack Developer</h3>
+            <h3 className="flex justify-center w-55 text-white text-3xl font-bold font-courier bg-gray-600 mt-5 md:w-100">Full Stack Developer</h3>
             <p className="text-black text-base whitespace-pre-line mt-10 md:w-96">
               I build responsive websites with great details
               and attractiveness for businesses.

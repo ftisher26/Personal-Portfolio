@@ -1,5 +1,6 @@
 import dogimg from '../../../assets/images/perrito.jpg'
 import coche from '../../../assets/images/car.webp'
+import torres from '../../../assets/images/torres.webp'
 
 
 
@@ -17,34 +18,33 @@ const cardsSkills = [
   {
     title: "Backend Development",
     description: "I create a backend for your website with everything that you need to make work all the functions of your website, with a database and server-side.",
-    image: "",
+    image: torres,
   }
 ]
 
 export default function MainSection() {
   return (
-    <div className="py-10 px-6">
-      <main className="flex flex-col flex-1 w-full overflow-hidden gap-y-12 max-w-7xl mx-auto">
-        <section className="bg-[#edf2f7] px-[5%] py-16">
+    <div className="py-10">
+      <main className="flex flex-col flex-1 w-full overflow-hidden gap-y-12 max-w-7xl m-auto mx-auto p-4">
+        <section className="bg-[#edf2f7] px-[3%] py-16">
           <div className="max-w-6xl mx-auto size-fit">
-            <div className="flex justify-center items-center">
-              <h1 className="text-black text-4xl font-courier">
-                <span className="relative no-underline after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full after:bg-blue-500">
-                  WHAT I DO
-                </span>
+            <div className="text-center mb-10">
+              <h1 className="font-courier text-[#1a1a2e] text-[clamp(1.8rem,3vw,2.4rem)] font-bold text-4xl tracking-wide mb-2">
+                What i do
               </h1>
+              <span className="block w-15 h-0.75 bg-[#4a9eff] mx-auto rounded-full"></span>
             </div>
             {/* CARDS */}
-            <div className="grid grid-cols-1 gap-8 mt-8 mx-auto md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 mt-8 mx-auto md:grid-cols-3">
               {cardsSkills.map(({ title, description, image }) => (
                 <div 
                   key={title}
-                  className={`flex-1 bg-white border-2 border-gray-300 rounded-md p-4`}
+                  className={`flex-1 bg-white border-2 border-gray-300 rounded-md`}
                 >
-                  <div className="w-full max-w-275 h-42 overflow-hidden relative rounded-md isolate">
+                  <div className="max-w-full overflow-hidden relative isolate md:h-50">
                     <img src={image} alt={title} className="object-cover object-center size-full max-w-full" />
                   </div>
-                  <div className="">
+                  <div className="p-4">
                     <h2 className="text-xl font-black mb-2 underline md:text-2xl">{title}</h2>
                     <p className="text-gray-600">{description}</p>
                   </div>
