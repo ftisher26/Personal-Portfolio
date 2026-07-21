@@ -3,7 +3,7 @@ import pokemon from "../../../assets/images/isagi2.webp";
 export default function Hero() {
   return (
     <>
-      <section className="bg-white min-h-85 flex flex-col justify-between px-[5%] py-16 gap-8 md:flex-row">
+      <section className="bg-white min-h-85 flex flex-col justify-between px-[5%] py-16 gap-8 animate-fade-in md:flex-row md:justify-around">
         <div className="max-w-140 size-fit">
           <h1 className="font-bold text-5xl text-black mb-3 font-courier md:text-6xl">About Me</h1>
           <p className="text-wrap whitespace-pre-line text-black">

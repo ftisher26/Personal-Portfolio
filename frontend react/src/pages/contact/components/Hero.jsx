@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="flex w-full h-[70vh] relative overflow-hidden text-[#f5f5f5] p-[0 20px]">
-      <h1 className="animate-fade-up inline-flex flex-col justify-center items-center text-center text-shadow-lg/50 color-[#f5f5f5] relative h-auto w-full z-1 font-courier font-bold text-[1.6rem] leading-6 tracking-[1px] min-[320px]:max-[374px]:text-[1.4rem] sm:text-[3rem] sm:leading-9">
+      <h1 className="animate-fade-in inline-flex flex-col justify-center items-center text-center text-shadow-lg/50 color-[#f5f5f5] relative h-auto w-full z-1 font-courier font-bold text-[1.6rem] leading-6 tracking-[1px] min-[320px]:max-[374px]:text-[1.4rem] sm:text-[3rem] sm:leading-9">
         <span className="block">Hello.</span>
         Let's work together<br/>
         on your next project.

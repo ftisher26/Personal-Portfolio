@@ -1,4 +1,4 @@
-import coche from '../../../assets/images/car.webp'
+import isagi from '../../../assets/images/isagi.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faBriefcase, faLocationDot, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <>
       <section className="bg-white min-h-85 flex flex-col justify-between px-[5%] py-16 gap-8 md:flex-row md:justify-around">
-        <div className="max-w-140 size-fit">
+        <div className="max-w-140 size-fit animate-fade-in">
             <h1 className="text-black text-5xl font-courier size-fit">
               <span className="relative no-underline after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-1/2 after:bg-blue-500">
                 HI THERE!
@@ -39,10 +39,10 @@ export default function Hero() {
               </button>  
             </div>
         </div>
-        <div className="relative shrink-0 w-70 max-w-100 h-full">
+        <div className="relative shrink-0 w-70 max-w-100 h-full animate-fade-in">
           <img 
           loading='eager' 
-          src={coche} 
+          src={isagi} 
           alt="A fucking car bro" 
           fetchPriority='high' 
           decoding='async'

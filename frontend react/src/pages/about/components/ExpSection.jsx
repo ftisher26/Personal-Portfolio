@@ -1,3 +1,5 @@
+import ScrollReveal from "../../../components/ScrollReveal";
+
 export default function ExperienceSection() {
 
   const cardsExp = [
@@ -17,6 +19,7 @@ export default function ExperienceSection() {
 
   return (
     <>
+    <ScrollReveal>
       <section className="flex flex-col gap-8 overflow-hidden mt-5 md:flex-row xl:ml-20">
         <div className="min-h-85 mt-8">
           
@@ -81,6 +84,7 @@ export default function ExperienceSection() {
           </div> 
         </div>
       </section>
+      </ScrollReveal>
     </>
   )
 }

@@ -12,7 +12,7 @@ const navLinks = [
 ]
 
 const socials = [
-  { label: <FontAwesomeIcon icon={faFacebookF}/>,  href: 'https://facebook.com', target: '_blank', className: 'bg-[#1877f2]', title: 'Facebook' },
+  { label: <FontAwesomeIcon icon={faFacebookF}/>,  href: 'https://www.facebook.com/TatoCSV/', target: '_blank', className: 'bg-[#1877f2]', title: 'Facebook' },
   { label: <FontAwesomeIcon icon={faXTwitter}/>,  href: 'https://x.com', target: '_blank', className: 'bg-black', title: 'X' },
   { label: 'Bē', href: 'https://behance.net', target: '_blank', className: 'bg-[#1769ff]', title: 'Behance' },
   { label: 'in', href: 'https://linkedin.com', target: '_blank', className: 'bg-[#0a66c2]', title: 'LinkedIn' },
