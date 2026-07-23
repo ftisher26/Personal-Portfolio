@@ -27,14 +27,14 @@ export default function SkillsCards() {
             <div className="min-h-65">
 
                 {/* TITLE */}
-                <div className="flex size-fit mb-8 animate-fade-in">
+                <div className="flex size-fit mb-8">
                   <h2 className="font-semibold text-courier text-2xl underline underline-offset-8 md:text-3xl">
                     Skills & Technologies
                   </h2>
                 </div>
 
                 {/* CARDS */}
-                <div className="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-8 max-w-275 animate-fade-in mx-auto">
+                <div className="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-8 max-w-275 mx-auto">
                   {cardsData.map((item, index) => (
                     <div 
                       key={index}

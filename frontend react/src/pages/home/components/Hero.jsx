@@ -31,12 +31,21 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col size-fit self-center md:flex-row md:gap-10">
-              <button className="text-white rounded-xl cursor-pointer bg-[#2d3748] px-14.5 py-3.5 mt-10">
+              <a 
+                href="/contact"
+                target='_blank'
+                className="inline-block bg-[#2d3748] text-white px-8 py-3 mt-6 rounded-lg font-semibold text-[0.85rem] tracking-widest uppercase shadow-yellow transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-yellow-lg no-underline"
+              >
                 HIRE ME
-              </button>
-              <button className="text-white rounded-xl cursor-pointer bg-[#2d3748] px-8 py-3.5 mt-8  md:mt-10">
+              </a>
+                
+              <a 
+                href="/projects"
+                target='_blank'
+                className="inline-block bg-[#2d3748] text-white px-8 py-3 mt-6 rounded-lg font-semibold text-[0.85rem] tracking-widest uppercase shadow-yellow transition-all hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-yellow-lg no-underline"
+              >
                 VIEW MY WORK
-              </button>  
+              </a>
             </div>
         </div>
         <div className="relative shrink-0 w-70 max-w-100 h-full animate-fade-in">

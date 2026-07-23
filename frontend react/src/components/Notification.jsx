@@ -17,7 +17,7 @@ export default function Notification({ notification }) {
     )}
     { notification.visible && notification.type === 'error' && (
     <figure className="fixed bottom-6 left-0 right-0 ml-auto mr-auto w-max bg-[#e10000] bg-clip-padding shadow-[0_1px_10px_rgba(0,0,0,0.1)] rounded-lg backdrop-blur-[10px] z-50">
-      <div className="flex justify-center items-center p-[1rem_1rem_1rem_0.75rem] sm:p-[1rem_2rem_1rem_0.75rem] rounded-[inherit]"> 
+      <div className="flex justify-center items-center p-[1rem_0.35rem_1rem_0.35rem] sm:p-[1rem_2rem_1rem_0.75rem] rounded-[inherit]"> 
         <FontAwesomeIcon icon={faTriangleExclamation} className="text-[1.3rem] text-white mr-2"/>
         <p className='text-sm text-white font-semibold m-0 whitespace-pre-line w-3xs max-w-xs sm:w-80 sm:max-w-sm'>
         Whoops! Looks like something's wrong with your

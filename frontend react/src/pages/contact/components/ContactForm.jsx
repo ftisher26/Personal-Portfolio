@@ -34,7 +34,7 @@ export default function FormContact() {
  
           {/* TEXTBOXES */}
           <div className='flex flex-col'>
-              <div className=" lg:max-w-171.25">
+              <div className=" md:max-w-171.25">
                 <label htmlFor="username" className='font-bold'>First Name</label>
                 <input
                   type="text"
@@ -42,13 +42,13 @@ export default function FormContact() {
                   name="username"
                   value={formData.username}
                   onChange={handleInputChange}
-                  className={`w-full lg:max-w-171.25 ${errors.username ? 'input-invalid' : ''}`}
+                  className={`w-full md:max-w-171.25 ${errors.username ? 'input-invalid' : ''}`}
                   placeholder='Name'
                   autoComplete='given-name'
                   required
                 />
               </div>
-              <div className='pt-4 lg:max-w-171.25'>
+              <div className='pt-4 md:max-w-171.25'>
                 <label htmlFor="lastname" className='font-bold'>Last Name</label>
                 <input
                   type="text"
@@ -56,12 +56,12 @@ export default function FormContact() {
                   name="lastname"
                   value={formData.lastname}
                   onChange={handleInputChange}
-                  className={`w-full lg:max-w-171.25 ${errors.lastname ? 'input-invalid' : ''}`}
+                  className={`w-full md:max-w-171.25 ${errors.lastname ? 'input-invalid' : ''}`}
                   placeholder="Last name" 
                   autoComplete="family-name"
                   required />
               </div>
-              <div className="pt-4 lg:max-w-171.25">
+              <div className="pt-4 md:max-w-171.25">
                 <label htmlFor="useremail" className='font-bold'>Your email address
                 <span className='font-normal!'> (so i can reply to you)</span>
                 {error && <span className='text-[red] text-[1.2rem]'> {error}</span>}
@@ -72,19 +72,19 @@ export default function FormContact() {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className={`w-full lg:max-w-171.25 ${errors.email ? 'input-invalid' : ''}`}
+                  className={`w-full md:max-w-171.25 ${errors.email ? 'input-invalid' : ''}`}
                   placeholder="Email address"
                   autoComplete="email"
                   autoCapitalize="off"
                   required />
               </div>
-              <div className="pt-4 lg:max-w-171.25">
+              <div className="pt-4 md:max-w-171.25">
                 <label htmlFor="message" className='font-bold'>Your Message</label>
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  className={`w-full lg:max-w-171.25 ${errors.message ? 'input-invalid' : ''}`}
+                  className={`w-full md:max-w-171.25 ${errors.message ? 'input-invalid' : ''}`}
                   id="message"
                   rows={12}
                   cols={40}
